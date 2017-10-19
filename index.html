@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Najafgarh Drain Map</title>
+
+	<!-- Link to JQuery library (used for modal) -->	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Link to Mapbox GL JS library -->	
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+
+	<!-- Link to Mapbox GL JS css stylesheet -->	
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+
+	<!-- Link to our custom stylesheet -->	
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<!-- Map  -->	
+	<div id="map"></div>
+
+	
+
+	<!-- Map legend (content populated by our javascript) -->	
+	<div class='map-overlay' id='legend'></div>	
+	
+	<!-- "About this map" modal (hidden by default) -->	
+	<div class='modal'>
+		<h2 class='modal-title'>About this project</h2>
+		<div class='modal-body'><p>The condition of Delhi’s urban waterways is the result of 150 years of policy and planning that has severed the relationship between the city and its water.</p>
+
+<p>The rehabilitation of Delhi’s waterways requires a holistic approach that considers all of the city’s systems in conjunction.</p>
+
+<p>The Vision proposes to understand the Najafgarh Drain and its tributaries as structural elements of the city –as a geographical urban armature around which the city organizes its systems, including public spaces, public facilities, urban ecologies, and mobility.</p><p>Map data courtesy of <a href='https://www.mapbox.com/studio/'>Mapbox Studio</a> </a></p><p>For questions or to improve this map, contact <a href='mailto:ssv4yt@virginia.edu'>Siddharth Velamakanni</a></p></div>
+		<button class='close-button'>&times;</button>  	<!-- A special "x" character (the multiply sign) used in close buttons -->	
+	</div>
+	<div id='screen'></div>
+
+	<!-- Button to hide or show "About this map" modal -->	
+	<button type='button' class='button-default' id="about">About this map</button> <!-- Button to hide or show modal -->
+</body>
+
+<!-- Link to our custom javascript -->	
+<script src="map.js"></script>
+ </html>
